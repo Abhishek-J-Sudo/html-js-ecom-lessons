@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>ECOM | Products</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="cart-sidebar">
+        <div class="cart-header">
+          <h2>Shopping Cart</h2>
+          <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+          <!-- Cart items will be inserted here -->
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total-row">
+            <span>Total:</span>
+            <span class="cart-total">₹ 0</span>
+          </div>
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+      <div class="cart-overlay"></div>
+      <div id="header-placeholder"></div>
+      <div id="nav-placeholder"></div>
+      <main class="content-area">
+        <aside>
+          <h3
+            style="
+              padding: 10px 0px;
+              margin-bottom: 10px;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.163);
+            "
+          >
+            Filter by Category
+          </h3>
+          <div class="filter-categories">
+            <div class="filter-list">
+              <input type="checkbox" name="Street" id="street" />
+              <label for="Street">Street</label>
+            </div>
+            <div class="filter-list">
+              <input type="checkbox" name="Landscape" id="landscape" />
+              <label for="Landscape">Landscape</label>
+            </div>
+            <div class="filter-list">
+              <input type="checkbox" name="Wedding" id="wedding" />
+              <label for="Wedding">Wedding</label>
+            </div>
+            <div class="filter-list">
+              <input type="checkbox" name="Portraits" id="portrait" />
+              <label for="Portraits">Portraits</label>
+            </div>
+          </div>
+          <div class="filter-buttons">
+            <button>Clear</button>
+          </div>
+        </aside>
+        <div class="product-container">
+          <section class="sort-container">
+            <label for="products">Sort by:</label>
+            <select name="options-first" id="options-first"></select>
+            <select name="options-second" id="options-second"></select>
+          </section>
+          <section class="product-grid"></section>
+        </div>
+        <div id="image-overlay" role="dialog" class="image-overlay">
+          <div class="overlay-content">
+            <img id="full-size-image" src="" alt="Full size product image" />
+            <button id="close-overlay" class="close-button">×</button>
+          </div>
+        </div>
+      </main>
+      <button href="" class="back-to-top">
+        <img
+          src="https://files.svgcdn.io/uil/top-arrow-from-top.svg"
+          width="30"
+          alt="Back to top"
+        />
+      </button>
+      <div id="footer-placeholder"></div>
+      <div id="mobile-nav-placeholder"></div>
+    </div>
+    <script src="/js/components.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/cart.js"></script>
+  </body>
+</html>
